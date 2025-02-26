@@ -1,2 +1,2 @@
 # desenvolvimento-desktop
-Unidade Curricular Desenvolvimento Desktop usando: Gir, VisualStudio 2022, c# e Windows Forms com . Net Framework 4.8 .
+Unidade Curricular Desenvolvimento Desktop usando: Git, VisualStudio 2022, c# e Windows Forms com . Net Framework 4.8 .

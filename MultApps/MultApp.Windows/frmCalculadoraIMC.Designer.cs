@@ -29,6 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblImc = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmbIdade = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.txtPeso = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lblImcAdulto = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblIdade = new System.Windows.Forms.Label();
             this.chkMasc = new System.Windows.Forms.CheckBox();
@@ -37,24 +48,24 @@
             this.chkCrianca = new System.Windows.Forms.CheckBox();
             this.chkAdulto = new System.Windows.Forms.CheckBox();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.lblImcAdulto = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.lblResultado);
+            this.panel1.Controls.Add(this.btnCalcular);
+            this.panel1.Controls.Add(this.lblImc);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.cmbIdade);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtAltura);
+            this.panel1.Controls.Add(this.txtPeso);
             this.panel1.Controls.Add(this.maskedTextBox1);
             this.panel1.Controls.Add(this.lblImcAdulto);
             this.panel1.Controls.Add(this.label3);
@@ -69,6 +80,131 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnCalcular.Location = new System.Drawing.Point(67, 267);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(122, 35);
+            this.btnCalcular.TabIndex = 19;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // lblImc
+            // 
+            this.lblImc.AutoSize = true;
+            this.lblImc.BackColor = System.Drawing.Color.Transparent;
+            this.lblImc.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImc.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblImc.Location = new System.Drawing.Point(28, 323);
+            this.lblImc.Name = "lblImc";
+            this.lblImc.Size = new System.Drawing.Size(123, 27);
+            this.lblImc.TabIndex = 18;
+            this.lblImc.Text = "Seu IMC é: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label6.Location = new System.Drawing.Point(294, 214);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 14);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Idade ";
+            // 
+            // cmbIdade
+            // 
+            this.cmbIdade.FormattingEnabled = true;
+            this.cmbIdade.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"});
+            this.cmbIdade.Location = new System.Drawing.Point(297, 231);
+            this.cmbIdade.Name = "cmbIdade";
+            this.cmbIdade.Size = new System.Drawing.Size(121, 21);
+            this.cmbIdade.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label5.Location = new System.Drawing.Point(140, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 14);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Altura (M)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(23, 214);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 14);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Peso (KG)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "label2";
+            // 
+            // txtAltura
+            // 
+            this.txtAltura.Location = new System.Drawing.Point(143, 232);
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(124, 20);
+            this.txtAltura.TabIndex = 11;
+            // 
+            // txtPeso
+            // 
+            this.txtPeso.Location = new System.Drawing.Point(21, 232);
+            this.txtPeso.Multiline = true;
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.TabIndex = 10;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 9;
+            // 
+            // lblImcAdulto
+            // 
+            this.lblImcAdulto.AutoSize = true;
+            this.lblImcAdulto.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImcAdulto.Location = new System.Drawing.Point(18, 191);
+            this.lblImcAdulto.Name = "lblImcAdulto";
+            this.lblImcAdulto.Size = new System.Drawing.Size(132, 19);
+            this.lblImcAdulto.TabIndex = 8;
+            this.lblImcAdulto.Text = "IMC para Adulto";
             // 
             // label3
             // 
@@ -173,68 +309,16 @@
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Selecione";
             // 
-            // lblImcAdulto
+            // lblResultado
             // 
-            this.lblImcAdulto.AutoSize = true;
-            this.lblImcAdulto.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImcAdulto.Location = new System.Drawing.Point(18, 191);
-            this.lblImcAdulto.Name = "lblImcAdulto";
-            this.lblImcAdulto.Size = new System.Drawing.Size(132, 19);
-            this.lblImcAdulto.TabIndex = 8;
-            this.lblImcAdulto.Text = "IMC para Adulto";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(21, 232);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 10;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(143, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 20);
-            this.textBox2.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "label2";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(23, 214);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 14);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Peso (KG)";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label5.Location = new System.Drawing.Point(140, 215);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 14);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Altura (M)";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.BackColor = System.Drawing.Color.Transparent;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.ForeColor = System.Drawing.Color.Black;
+            this.lblResultado.Location = new System.Drawing.Point(151, 323);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(0, 24);
+            this.lblResultado.TabIndex = 20;
             // 
             // frmCalculadoraIMC
             // 
@@ -262,12 +346,17 @@
         private System.Windows.Forms.CheckBox chkMasc;
         private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label lblImcAdulto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.ComboBox cmbIdade;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblImc;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lblResultado;
     }
 }

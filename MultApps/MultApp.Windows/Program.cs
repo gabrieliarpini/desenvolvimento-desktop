@@ -16,7 +16,7 @@ namespace MultApp.Windows
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCalculadoraIMC());
+            Application.Run(new Principal());
         }
     }
 }

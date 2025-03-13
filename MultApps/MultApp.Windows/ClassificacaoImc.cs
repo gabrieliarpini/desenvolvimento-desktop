@@ -14,5 +14,6 @@ namespace MultApp.Windows
         ObesidadeGrau1,
         ObesidadeGrau2,
         ObesidadeGrau3,
+        Obesidade,
     }
 }

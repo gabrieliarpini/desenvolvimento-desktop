@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblImc = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.chkCrianca = new System.Windows.Forms.CheckBox();
             this.chkAdulto = new System.Windows.Forms.CheckBox();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,12 +58,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.cmbIdade);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.Controls.Add(this.btnCalcular);
             this.panel1.Controls.Add(this.lblImc);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.cmbIdade);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
@@ -83,6 +83,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(517, 141);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 283);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // lblResultado
             // 
@@ -133,25 +141,10 @@
             // 
             this.cmbIdade.FormattingEnabled = true;
             this.cmbIdade.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19"});
+            "1 a 5 anos",
+            "6 a 10 anos",
+            "11 a 15 anos",
+            "16 a 19 anos"});
             this.cmbIdade.Location = new System.Drawing.Point(297, 231);
             this.cmbIdade.Name = "cmbIdade";
             this.cmbIdade.Size = new System.Drawing.Size(121, 21);
@@ -323,21 +316,12 @@
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Selecione";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(563, 178);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 228);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            
-            // 
             // frmCalculadoraIMC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(796, 448);
             this.Controls.Add(this.panel1);
             this.Name = "frmCalculadoraIMC";
             this.Text = "frmCalculadoraIMC";

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbIdade = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblImc = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmbIdade = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,11 +84,24 @@
             this.panel1.Size = new System.Drawing.Size(776, 426);
             this.panel1.TabIndex = 0;
             // 
+            // cmbIdade
+            // 
+            this.cmbIdade.FormattingEnabled = true;
+            this.cmbIdade.Items.AddRange(new object[] {
+            "1 a 5 anos",
+            "6 a 10 anos",
+            "11 a 15 anos",
+            "16 a 19 anos"});
+            this.cmbIdade.Location = new System.Drawing.Point(297, 231);
+            this.cmbIdade.Name = "cmbIdade";
+            this.cmbIdade.Size = new System.Drawing.Size(121, 21);
+            this.cmbIdade.TabIndex = 15;
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(517, 141);
+            this.pictureBox1.Location = new System.Drawing.Point(477, 136);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 283);
+            this.pictureBox1.Size = new System.Drawing.Size(243, 300);
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,19 +149,6 @@
             this.label6.Size = new System.Drawing.Size(39, 14);
             this.label6.TabIndex = 16;
             this.label6.Text = "Idade ";
-            // 
-            // cmbIdade
-            // 
-            this.cmbIdade.FormattingEnabled = true;
-            this.cmbIdade.Items.AddRange(new object[] {
-            "1 a 5 anos",
-            "6 a 10 anos",
-            "11 a 15 anos",
-            "16 a 19 anos"});
-            this.cmbIdade.Location = new System.Drawing.Point(297, 231);
-            this.cmbIdade.Name = "cmbIdade";
-            this.cmbIdade.Size = new System.Drawing.Size(121, 21);
-            this.cmbIdade.TabIndex = 15;
             // 
             // label5
             // 

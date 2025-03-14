@@ -22,5 +22,11 @@ namespace MultApp.Windows
             var form = new frmCalculadoraIMC();
             form.ShowDialog();
         }
+
+        private void MDIPrincipal_Shown(object sender, EventArgs e)
+        {
+            var loading = new SplashSreen();
+            loading.ShowDialog();
+        }
     }
 }

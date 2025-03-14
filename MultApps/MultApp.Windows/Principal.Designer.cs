@@ -40,22 +40,25 @@
             this.calculadorasToolStripMenuItem1});
             this.menuStripPrincipral.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipral.Name = "menuStripPrincipral";
-            this.menuStripPrincipral.Size = new System.Drawing.Size(800, 24);
+            this.menuStripPrincipral.Size = new System.Drawing.Size(800, 25);
             this.menuStripPrincipral.TabIndex = 1;
             this.menuStripPrincipral.Text = "menuStrip1";
             // 
             // calculadorasToolStripMenuItem1
             // 
+            this.calculadorasToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
             this.calculadorasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCalculadoraImc});
+            this.calculadorasToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculadorasToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Black;
             this.calculadorasToolStripMenuItem1.Name = "calculadorasToolStripMenuItem1";
-            this.calculadorasToolStripMenuItem1.Size = new System.Drawing.Size(87, 20);
+            this.calculadorasToolStripMenuItem1.Size = new System.Drawing.Size(95, 21);
             this.calculadorasToolStripMenuItem1.Text = "Calculadoras";
             // 
             // menuCalculadoraImc
             // 
             this.menuCalculadoraImc.Name = "menuCalculadoraImc";
-            this.menuCalculadoraImc.Size = new System.Drawing.Size(180, 22);
+            this.menuCalculadoraImc.Size = new System.Drawing.Size(191, 22);
             this.menuCalculadoraImc.Text = "Calculadora de IMC";
             this.menuCalculadoraImc.Click += new System.EventHandler(this.cAlculadorasDeIMCToolStripMenuItem_Click);
             // 
@@ -71,6 +74,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Shown += new System.EventHandler(this.MDIPrincipal_Shown);
             this.menuStripPrincipral.ResumeLayout(false);
             this.menuStripPrincipral.PerformLayout();
             this.ResumeLayout(false);

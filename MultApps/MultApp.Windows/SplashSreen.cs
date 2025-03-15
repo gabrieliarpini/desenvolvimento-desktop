@@ -29,7 +29,7 @@ namespace MultApp.Windows
             for (int i = 0; i < 101; i++)
             {
                 progressBar1.Value = i;
-                Thread.Sleep(40);
+                Thread.Sleep(10);
             }
             progressBar1.Value = 99;
             Thread.Sleep(200);
@@ -37,6 +37,9 @@ namespace MultApp.Windows
 
         }
 
-       
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

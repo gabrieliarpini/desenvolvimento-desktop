@@ -290,7 +290,10 @@ namespace MultApp.Windows
 
         }
 
+        private void frmCalculadoraIMC_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 
        

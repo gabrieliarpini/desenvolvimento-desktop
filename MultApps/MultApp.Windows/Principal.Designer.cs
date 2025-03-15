@@ -31,6 +31,7 @@
             this.menuStripPrincipral = new System.Windows.Forms.MenuStrip();
             this.calculadorasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCalculadoraImc = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraDeAposentadoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,8 @@
             // 
             this.calculadorasToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
             this.calculadorasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCalculadoraImc});
+            this.menuCalculadoraImc,
+            this.calculadoraDeAposentadoriaToolStripMenuItem});
             this.calculadorasToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculadorasToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Black;
             this.calculadorasToolStripMenuItem1.Name = "calculadorasToolStripMenuItem1";
@@ -58,9 +60,16 @@
             // menuCalculadoraImc
             // 
             this.menuCalculadoraImc.Name = "menuCalculadoraImc";
-            this.menuCalculadoraImc.Size = new System.Drawing.Size(191, 22);
+            this.menuCalculadoraImc.Size = new System.Drawing.Size(253, 22);
             this.menuCalculadoraImc.Text = "Calculadora de IMC";
             this.menuCalculadoraImc.Click += new System.EventHandler(this.cAlculadorasDeIMCToolStripMenuItem_Click);
+            // 
+            // calculadoraDeAposentadoriaToolStripMenuItem
+            // 
+            this.calculadoraDeAposentadoriaToolStripMenuItem.Name = "calculadoraDeAposentadoriaToolStripMenuItem";
+            this.calculadoraDeAposentadoriaToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
+            this.calculadoraDeAposentadoriaToolStripMenuItem.Text = "Calculadora de Aposentadoria";
+            this.calculadoraDeAposentadoriaToolStripMenuItem.Click += new System.EventHandler(this.calculadoraDeAposentadoriaToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -87,5 +96,6 @@
         private System.Windows.Forms.MenuStrip menuStripPrincipral;
         private System.Windows.Forms.ToolStripMenuItem calculadorasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem menuCalculadoraImc;
+        private System.Windows.Forms.ToolStripMenuItem calculadoraDeAposentadoriaToolStripMenuItem;
     }
 }

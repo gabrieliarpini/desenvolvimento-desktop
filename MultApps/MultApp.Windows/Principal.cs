@@ -28,5 +28,11 @@ namespace MultApp.Windows
             var loading = new SplashSreen();
             loading.ShowDialog();
         }
+
+        private void calculadoraDeAposentadoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new FrmCalculoAposentadoria();
+            form.ShowDialog();
+        }
     }
 }

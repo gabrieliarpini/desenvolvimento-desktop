@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarteirinhaParque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarteirinhaParque.Designer.cs">
+      <DependentUpon>CarteirinhaParque.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassificacaoImc.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -65,6 +71,7 @@
     <Compile Include="FrmCalculoAposentadoria.Designer.cs">
       <DependentUpon>FrmCalculoAposentadoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Imagens.cs" />
     <Compile Include="ImcImagem.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -80,6 +87,9 @@
     <Compile Include="SplashSreen.Designer.cs">
       <DependentUpon>SplashSreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CarteirinhaParque.resx">
+      <DependentUpon>CarteirinhaParque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCalculadoraIMC.resx">
       <DependentUpon>frmCalculadoraIMC.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +127,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo clínica médica minimalista roxo e amarelo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divis].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international_18695381 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international_18695381 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international_18695381 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international_18695381 %285%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

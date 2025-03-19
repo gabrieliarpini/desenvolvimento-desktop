@@ -117,23 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="international_18695381 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\international_18695381 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="divis]" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\divis].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="international_18695381 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\international_18695381 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="international_18695381 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\international_18695381 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo clínica médica minimalista roxo e amarelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo clínica médica minimalista roxo e amarelo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="international_18695381 (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\international_18695381 (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

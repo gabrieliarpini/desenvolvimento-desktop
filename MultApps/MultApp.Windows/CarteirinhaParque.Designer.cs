@@ -212,6 +212,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CarteirinhaParque";
             this.Text = "CarteirinhaParque";
+            this.Load += new System.EventHandler(this.CarteirinhaParque_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelCor.ResumeLayout(false);

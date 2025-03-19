@@ -73,6 +73,12 @@
     </Compile>
     <Compile Include="Imagens.cs" />
     <Compile Include="ImcImagem.cs" />
+    <Compile Include="LojaAcai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LojaAcai.Designer.cs">
+      <DependentUpon>LojaAcai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCalculoAposentadoria.resx">
       <DependentUpon>FrmCalculoAposentadoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LojaAcai.resx">
+      <DependentUpon>LojaAcai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -142,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\international_18695381 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13486474_36.03 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1451849802-612x612.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _13486474_36_03__1_ {
+            get {
+                object obj = ResourceManager.GetObject("13486474_36.03 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap divis_ {
             get {
                 object obj = ResourceManager.GetObject("divis]", resourceCulture);
@@ -106,6 +116,16 @@ namespace MultApp.Windows.Properties {
         internal static System.Drawing.Bitmap international_18695381__5_ {
             get {
                 object obj = ResourceManager.GetObject("international_18695381 (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1451849802_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1451849802-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

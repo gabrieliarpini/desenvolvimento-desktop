@@ -32,13 +32,16 @@
             this.calculadorasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCalculadoraImc = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraDeAposentadoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carteirinhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemaDeIdentificaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipral.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripPrincipral
             // 
             this.menuStripPrincipral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculadorasToolStripMenuItem1});
+            this.calculadorasToolStripMenuItem1,
+            this.carteirinhaToolStripMenuItem});
             this.menuStripPrincipral.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipral.Name = "menuStripPrincipral";
             this.menuStripPrincipral.Size = new System.Drawing.Size(800, 25);
@@ -71,6 +74,22 @@
             this.calculadoraDeAposentadoriaToolStripMenuItem.Text = "Calculadora de Aposentadoria";
             this.calculadoraDeAposentadoriaToolStripMenuItem.Click += new System.EventHandler(this.calculadoraDeAposentadoriaToolStripMenuItem_Click);
             // 
+            // carteirinhaToolStripMenuItem
+            // 
+            this.carteirinhaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sistemaDeIdentificaçãoToolStripMenuItem});
+            this.carteirinhaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.carteirinhaToolStripMenuItem.Name = "carteirinhaToolStripMenuItem";
+            this.carteirinhaToolStripMenuItem.Size = new System.Drawing.Size(88, 21);
+            this.carteirinhaToolStripMenuItem.Text = "Carteirinha";
+            // 
+            // sistemaDeIdentificaçãoToolStripMenuItem
+            // 
+            this.sistemaDeIdentificaçãoToolStripMenuItem.Name = "sistemaDeIdentificaçãoToolStripMenuItem";
+            this.sistemaDeIdentificaçãoToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.sistemaDeIdentificaçãoToolStripMenuItem.Text = " sistema de identificação";
+            this.sistemaDeIdentificaçãoToolStripMenuItem.Click += new System.EventHandler(this.sistemaDeIdentificaçãoToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,5 +116,7 @@
         private System.Windows.Forms.ToolStripMenuItem calculadorasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem menuCalculadoraImc;
         private System.Windows.Forms.ToolStripMenuItem calculadoraDeAposentadoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carteirinhaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sistemaDeIdentificaçãoToolStripMenuItem;
     }
 }

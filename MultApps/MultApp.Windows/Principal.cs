@@ -34,5 +34,12 @@ namespace MultApp.Windows
             var form = new FrmCalculoAposentadoria();
             form.ShowDialog();
         }
+
+        private void sistemaDeIdentificaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var form = new CarteirinhaParque();
+            form.ShowDialog();
+        }
     }
 }

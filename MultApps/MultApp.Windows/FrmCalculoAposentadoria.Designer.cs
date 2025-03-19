@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblResultado2 = new System.Windows.Forms.Label();
+            this.lblCalculo = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.chkMasc = new System.Windows.Forms.CheckBox();
             this.chkFem = new System.Windows.Forms.CheckBox();
             this.tempoContribuicao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dateNascimento = new System.Windows.Forms.DateTimePicker();
             this.dataNascimento = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.chkMasc = new System.Windows.Forms.CheckBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.lblCalculo = new System.Windows.Forms.Label();
-            this.lblResultado2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,58 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(779, 459);
             this.panel1.TabIndex = 0;
+            // 
+            // lblResultado2
+            // 
+            this.lblResultado2.AutoSize = true;
+            this.lblResultado2.Location = new System.Drawing.Point(139, 320);
+            this.lblResultado2.Name = "lblResultado2";
+            this.lblResultado2.Size = new System.Drawing.Size(0, 13);
+            this.lblResultado2.TabIndex = 23;
+            // 
+            // lblCalculo
+            // 
+            this.lblCalculo.AutoSize = true;
+            this.lblCalculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalculo.Location = new System.Drawing.Point(138, 320);
+            this.lblCalculo.Name = "lblCalculo";
+            this.lblCalculo.Size = new System.Drawing.Size(0, 24);
+            this.lblCalculo.TabIndex = 22;
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(35, 314);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(97, 23);
+            this.lblResultado.TabIndex = 21;
+            this.lblResultado.Text = "Resultado:";
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnCalcular.Location = new System.Drawing.Point(409, 152);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(122, 35);
+            this.btnCalcular.TabIndex = 20;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
+            // 
+            // chkMasc
+            // 
+            this.chkMasc.AutoSize = true;
+            this.chkMasc.BackColor = System.Drawing.Color.Transparent;
+            this.chkMasc.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMasc.ForeColor = System.Drawing.Color.DimGray;
+            this.chkMasc.Location = new System.Drawing.Point(537, 75);
+            this.chkMasc.Name = "chkMasc";
+            this.chkMasc.Size = new System.Drawing.Size(129, 33);
+            this.chkMasc.TabIndex = 7;
+            this.chkMasc.Text = "Masculino";
+            this.chkMasc.UseVisualStyleBackColor = false;
+            this.chkMasc.CheckedChanged += new System.EventHandler(this.chkMasc_CheckedChanged);
             // 
             // chkFem
             // 
@@ -103,6 +155,7 @@
             this.dateNascimento.Name = "dateNascimento";
             this.dateNascimento.Size = new System.Drawing.Size(200, 20);
             this.dateNascimento.TabIndex = 3;
+           
             // 
             // dataNascimento
             // 
@@ -126,58 +179,6 @@
             this.lbl1.Size = new System.Drawing.Size(244, 27);
             this.lbl1.TabIndex = 1;
             this.lbl1.Text = "Verificar Aposentadoria";
-            // 
-            // chkMasc
-            // 
-            this.chkMasc.AutoSize = true;
-            this.chkMasc.BackColor = System.Drawing.Color.Transparent;
-            this.chkMasc.Font = new System.Drawing.Font("Microsoft Tai Le", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMasc.ForeColor = System.Drawing.Color.DimGray;
-            this.chkMasc.Location = new System.Drawing.Point(537, 75);
-            this.chkMasc.Name = "chkMasc";
-            this.chkMasc.Size = new System.Drawing.Size(129, 33);
-            this.chkMasc.TabIndex = 7;
-            this.chkMasc.Text = "Masculino";
-            this.chkMasc.UseVisualStyleBackColor = false;
-            this.chkMasc.CheckedChanged += new System.EventHandler(this.chkMasc_CheckedChanged);
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnCalcular.Location = new System.Drawing.Point(409, 152);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(122, 35);
-            this.btnCalcular.TabIndex = 20;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(35, 314);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(97, 23);
-            this.lblResultado.TabIndex = 21;
-            this.lblResultado.Text = "Resultado:";
-            // 
-            // lblCalculo
-            // 
-            this.lblCalculo.AutoSize = true;
-            this.lblCalculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalculo.Location = new System.Drawing.Point(138, 320);
-            this.lblCalculo.Name = "lblCalculo";
-            this.lblCalculo.Size = new System.Drawing.Size(0, 24);
-            this.lblCalculo.TabIndex = 22;
-            // 
-            // lblResultado2
-            // 
-            this.lblResultado2.AutoSize = true;
-            this.lblResultado2.Location = new System.Drawing.Point(139, 320);
-            this.lblResultado2.Name = "lblResultado2";
-            this.lblResultado2.Size = new System.Drawing.Size(0, 13);
-            this.lblResultado2.TabIndex = 23;
             // 
             // FrmCalculoAposentadoria
             // 

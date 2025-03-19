@@ -63,6 +63,56 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap divis_ {
+            get {
+                object obj = ResourceManager.GetObject("divis]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap international_18695381__2_ {
+            get {
+                object obj = ResourceManager.GetObject("international_18695381 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap international_18695381__3_ {
+            get {
+                object obj = ResourceManager.GetObject("international_18695381 (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap international_18695381__4_ {
+            get {
+                object obj = ResourceManager.GetObject("international_18695381 (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap international_18695381__5_ {
+            get {
+                object obj = ResourceManager.GetObject("international_18695381 (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_clínica_médica_minimalista_roxo_e_amarelo {
             get {
                 object obj = ResourceManager.GetObject("Logo clínica médica minimalista roxo e amarelo", resourceCulture);

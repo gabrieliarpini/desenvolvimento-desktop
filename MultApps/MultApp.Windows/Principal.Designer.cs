@@ -34,6 +34,8 @@
             this.calculadoraDeAposentadoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carteirinhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaDeIdentificaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedidoAçaíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fazerPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +43,8 @@
             // 
             this.menuStripPrincipral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadorasToolStripMenuItem1,
-            this.carteirinhaToolStripMenuItem});
+            this.carteirinhaToolStripMenuItem,
+            this.pedidoAçaíToolStripMenuItem});
             this.menuStripPrincipral.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipral.Name = "menuStripPrincipral";
             this.menuStripPrincipral.Size = new System.Drawing.Size(800, 25);
@@ -90,6 +93,22 @@
             this.sistemaDeIdentificaçãoToolStripMenuItem.Text = " sistema de identificação";
             this.sistemaDeIdentificaçãoToolStripMenuItem.Click += new System.EventHandler(this.sistemaDeIdentificaçãoToolStripMenuItem_Click);
             // 
+            // pedidoAçaíToolStripMenuItem
+            // 
+            this.pedidoAçaíToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fazerPedidoToolStripMenuItem});
+            this.pedidoAçaíToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.pedidoAçaíToolStripMenuItem.Name = "pedidoAçaíToolStripMenuItem";
+            this.pedidoAçaíToolStripMenuItem.Size = new System.Drawing.Size(90, 21);
+            this.pedidoAçaíToolStripMenuItem.Text = "Pedido Açaí";
+            // 
+            // fazerPedidoToolStripMenuItem
+            // 
+            this.fazerPedidoToolStripMenuItem.Name = "fazerPedidoToolStripMenuItem";
+            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fazerPedidoToolStripMenuItem.Text = "Fazer Pedido";
+            this.fazerPedidoToolStripMenuItem.Click += new System.EventHandler(this.fazerPedidoToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,5 +137,7 @@
         private System.Windows.Forms.ToolStripMenuItem calculadoraDeAposentadoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carteirinhaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sistemaDeIdentificaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pedidoAçaíToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fazerPedidoToolStripMenuItem;
     }
 }

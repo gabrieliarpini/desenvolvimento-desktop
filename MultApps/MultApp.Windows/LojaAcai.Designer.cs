@@ -110,6 +110,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblMensagem = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.listBoxCoberturas = new System.Windows.Forms.ListBox();
             this.listBoxComplementos = new System.Windows.Forms.ListBox();
@@ -118,7 +120,10 @@
             this.listBoxTamanho = new System.Windows.Forms.ListBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblMensagem = new System.Windows.Forms.Label();
+            this.btnGerar = new System.Windows.Forms.Button();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -170,6 +175,8 @@
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -715,6 +722,7 @@
             this.QntBanana.Size = new System.Drawing.Size(120, 20);
             this.QntBanana.TabIndex = 5;
             this.QntBanana.ValueChanged += new System.EventHandler(this.QntBanana_ValueChanged);
+            this.QntBanana.Click += new System.EventHandler(this.QntBanana_ValueChanged);
             // 
             // lblBanana
             // 
@@ -827,7 +835,7 @@
             // 
             // btnSelecionar500ml
             // 
-            this.btnSelecionar500ml.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSelecionar500ml.BackColor = System.Drawing.Color.Violet;
             this.btnSelecionar500ml.Location = new System.Drawing.Point(39, 146);
             this.btnSelecionar500ml.Name = "btnSelecionar500ml";
             this.btnSelecionar500ml.Size = new System.Drawing.Size(75, 23);
@@ -880,7 +888,7 @@
             // 
             // btnSelecionar1L
             // 
-            this.btnSelecionar1L.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSelecionar1L.BackColor = System.Drawing.Color.Violet;
             this.btnSelecionar1L.Location = new System.Drawing.Point(45, 146);
             this.btnSelecionar1L.Name = "btnSelecionar1L";
             this.btnSelecionar1L.Size = new System.Drawing.Size(75, 23);
@@ -933,7 +941,7 @@
             // 
             // btnSelecionar700ml
             // 
-            this.btnSelecionar700ml.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSelecionar700ml.BackColor = System.Drawing.Color.Violet;
             this.btnSelecionar700ml.Location = new System.Drawing.Point(41, 146);
             this.btnSelecionar700ml.Name = "btnSelecionar700ml";
             this.btnSelecionar700ml.Size = new System.Drawing.Size(75, 23);
@@ -986,7 +994,7 @@
             // 
             // btnSelecionar300ml
             // 
-            this.btnSelecionar300ml.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSelecionar300ml.BackColor = System.Drawing.Color.Violet;
             this.btnSelecionar300ml.Location = new System.Drawing.Point(31, 146);
             this.btnSelecionar300ml.Name = "btnSelecionar300ml";
             this.btnSelecionar300ml.Size = new System.Drawing.Size(75, 23);
@@ -1078,7 +1086,10 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panel2.Controls.Add(this.panel25);
+            this.panel2.Controls.Add(this.panel24);
+            this.panel2.Controls.Add(this.btnGerar);
             this.panel2.Controls.Add(this.lblMensagem);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.listBoxCoberturas);
@@ -1092,6 +1103,26 @@
             this.panel2.Size = new System.Drawing.Size(268, 907);
             this.panel2.TabIndex = 1;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(3, 9);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(18, 23);
+            this.lblTotal.TabIndex = 13;
+            this.lblTotal.Text = "-";
+            // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensagem.ForeColor = System.Drawing.Color.Red;
+            this.lblMensagem.Location = new System.Drawing.Point(12, 547);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 16);
+            this.lblMensagem.TabIndex = 11;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -1104,7 +1135,7 @@
             // 
             // listBoxCoberturas
             // 
-            this.listBoxCoberturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCoberturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCoberturas.FormattingEnabled = true;
             this.listBoxCoberturas.ItemHeight = 16;
             this.listBoxCoberturas.Location = new System.Drawing.Point(5, 363);
@@ -1114,7 +1145,7 @@
             // 
             // listBoxComplementos
             // 
-            this.listBoxComplementos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxComplementos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxComplementos.FormattingEnabled = true;
             this.listBoxComplementos.ItemHeight = 16;
             this.listBoxComplementos.Location = new System.Drawing.Point(5, 161);
@@ -1144,7 +1175,7 @@
             // 
             // listBoxTamanho
             // 
-            this.listBoxTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxTamanho.FormattingEnabled = true;
             this.listBoxTamanho.ItemHeight = 16;
             this.listBoxTamanho.Location = new System.Drawing.Point(5, 68);
@@ -1172,15 +1203,44 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Seu Pedido";
             // 
-            // lblMensagem
+            // btnGerar
             // 
-            this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensagem.ForeColor = System.Drawing.Color.Red;
-            this.lblMensagem.Location = new System.Drawing.Point(12, 547);
-            this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(0, 16);
-            this.lblMensagem.TabIndex = 11;
+            this.btnGerar.BackColor = System.Drawing.Color.Violet;
+            this.btnGerar.Location = new System.Drawing.Point(80, 793);
+            this.btnGerar.Name = "btnGerar";
+            this.btnGerar.Size = new System.Drawing.Size(118, 42);
+            this.btnGerar.TabIndex = 14;
+            this.btnGerar.Text = "Gerar Senha";
+            this.btnGerar.UseVisualStyleBackColor = false;
+            this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(3, 7);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(13, 18);
+            this.lblSenha.TabIndex = 15;
+            this.lblSenha.Text = "-";
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.Plum;
+            this.panel24.Controls.Add(this.lblSenha);
+            this.panel24.Location = new System.Drawing.Point(80, 841);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(118, 36);
+            this.panel24.TabIndex = 16;
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.SystemColors.Window;
+            this.panel25.Controls.Add(this.lblTotal);
+            this.panel25.Location = new System.Drawing.Point(5, 538);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(260, 42);
+            this.panel25.TabIndex = 17;
             // 
             // LojaAcai
             // 
@@ -1266,6 +1326,10 @@
             this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1363,5 +1427,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ListBox listBoxCoberturas;
         private System.Windows.Forms.Label lblMensagem;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Button btnGerar;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel panel25;
     }
 }

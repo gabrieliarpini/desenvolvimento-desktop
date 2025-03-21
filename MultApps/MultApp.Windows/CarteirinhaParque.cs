@@ -71,6 +71,11 @@ namespace MultApp.Windows
             // Retorna o CPF ofuscado
             return $"***.{parte1}.{parte2}.***";
         }
+
+        private void CarteirinhaParque_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

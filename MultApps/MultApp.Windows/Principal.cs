@@ -41,5 +41,11 @@ namespace MultApp.Windows
             var form = new CarteirinhaParque();
             form.ShowDialog();
         }
+
+        private void fazerPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new LojaAcai();
+            form.ShowDialog();
+        }
     }
 }

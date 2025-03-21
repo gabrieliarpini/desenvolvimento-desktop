@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +74,12 @@
     </Compile>
     <Compile Include="Imagens.cs" />
     <Compile Include="ImcImagem.cs" />
+    <Compile Include="LojaAcai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LojaAcai.Designer.cs">
+      <DependentUpon>LojaAcai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCalculoAposentadoria.resx">
       <DependentUpon>FrmCalculoAposentadoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LojaAcai.resx">
+      <DependentUpon>LojaAcai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -142,6 +152,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\international_18695381 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13486474_36.03 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1451849802-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana_600797891.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morango.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\granola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kiwi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leiteempo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ovomaltine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coberturamorango.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi-13kg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobertchoco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1423466_OZIB850.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi-13kg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacaxi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leitecondensado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

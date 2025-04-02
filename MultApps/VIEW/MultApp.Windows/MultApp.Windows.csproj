@@ -216,5 +216,11 @@
   <ItemGroup>
     <None Include="Resources\Banana.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CONTROLLER\MultApps.Controler\MultApps.Controler.csproj">
+      <Project>{63704ec5-a2a6-4fa5-9fe1-d5cecf9e8874}</Project>
+      <Name>MultApps.Controler</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,12 @@
-﻿namespace MultApps.Models.Entities
-    internal class Categoria
-    {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        
+﻿using MultApps.Models.Entities.Abstract;
 
+namespace MultApps.Models.Entities
+{
+
+    public class Categoria : EntidadeBase
+    {
+        public string Nome { get; set; }
+        public object Status { get; set; }
     }
 }
+   

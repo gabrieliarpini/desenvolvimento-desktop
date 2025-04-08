@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultApp.Windows
 {
-    internal class GeneroEnum
+    enum GeneroEnum
     {
+        Masculino,
+        Feminino
     }
 }

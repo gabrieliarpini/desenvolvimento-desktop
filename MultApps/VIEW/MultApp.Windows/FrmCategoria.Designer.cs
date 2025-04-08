@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bntLimpar = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -44,8 +45,8 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,9 +60,20 @@
             this.panel1.Size = new System.Drawing.Size(775, 453);
             this.panel1.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 292);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(769, 161);
+            this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCyan;
+            this.panel2.Controls.Add(this.bntLimpar);
             this.panel2.Controls.Add(this.lblStatus);
             this.panel2.Controls.Add(this.cmbStatus);
             this.panel2.Controls.Add(this.btnSalvar);
@@ -73,24 +85,26 @@
             this.panel2.Controls.Add(this.txtNome);
             this.panel2.Controls.Add(this.txtCriacao);
             this.panel2.Controls.Add(this.txtId);
-            this.panel2.Location = new System.Drawing.Point(37, 44);
+            this.panel2.Location = new System.Drawing.Point(3, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(683, 250);
+            this.panel2.Size = new System.Drawing.Size(769, 250);
             this.panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // bntLimpar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 292);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(683, 161);
-            this.dataGridView1.TabIndex = 11;
+            this.bntLimpar.Location = new System.Drawing.Point(261, 122);
+            this.bntLimpar.Name = "bntLimpar";
+            this.bntLimpar.Size = new System.Drawing.Size(75, 23);
+            this.bntLimpar.TabIndex = 11;
+            this.bntLimpar.Text = "Limpar";
+            this.bntLimpar.UseVisualStyleBackColor = true;
+            this.bntLimpar.Click += new System.EventHandler(this.bntLimpar_Click);
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(238, 115);
+            this.lblStatus.Location = new System.Drawing.Point(29, 105);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(62, 16);
             this.lblStatus.TabIndex = 10;
@@ -103,14 +117,14 @@
             "Inativo",
             "Ativo",
             "Excluido"});
-            this.cmbStatus.Location = new System.Drawing.Point(241, 134);
+            this.cmbStatus.Location = new System.Drawing.Point(32, 124);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(99, 21);
             this.cmbStatus.TabIndex = 9;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(414, 156);
+            this.btnSalvar.Location = new System.Drawing.Point(167, 122);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 8;
@@ -122,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 109);
+            this.label2.Location = new System.Drawing.Point(496, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 16);
             this.label2.TabIndex = 7;
@@ -130,7 +144,7 @@
             // 
             // txtDataAlteracao
             // 
-            this.txtDataAlteracao.Location = new System.Drawing.Point(32, 128);
+            this.txtDataAlteracao.Location = new System.Drawing.Point(499, 57);
             this.txtDataAlteracao.Multiline = true;
             this.txtDataAlteracao.Name = "txtDataAlteracao";
             this.txtDataAlteracao.Size = new System.Drawing.Size(142, 27);
@@ -211,9 +225,9 @@
             this.Text = "FrmCategoria";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -235,5 +249,6 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button bntLimpar;
     }
 }

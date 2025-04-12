@@ -9,9 +9,7 @@ namespace MultApps.Models.Entities
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public new DateTime DataCriacao { get; set; } 
-        public new DateTime DataAlteracao { get; set; } 
-        public new StatusEnum Status { get; set; }
+       
 
     }
 }

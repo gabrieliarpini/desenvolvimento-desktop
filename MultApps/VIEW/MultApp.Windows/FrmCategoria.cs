@@ -168,7 +168,7 @@ namespace MultApp.Windows
                 return;
             }
 
-            txtId.Text = categoria.id.ToString();
+            txtId.Text = categoria.Id.ToString();
             txtNome.Text = categoria.Nome;
             cmbStatus.SelectedIndex = (int)categoria.Status;
             txtCriacao.Text = categoria.DataCriacao.ToString("dd/MM/yyyy HH:mm");
@@ -190,24 +190,25 @@ namespace MultApp.Windows
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            var categoriaID = int.Parse(txtId.Text);
+            var categoriaId = int.Parse(txtId.Text);
 
             var categoriaRepository = new CategoriaRepository();
-            var sucesso = categoriaRepository.DeletarCategoria(categoriaID);
+            var sucesso = categoriaRepository.DeletarCategoria(categoriaId);
 
-           if(sucesso)
-           {
+            if (sucesso)
+            {
                 MessageBox.Show("Categoria removida com sucesso");
                 CarregarTodasCategorias();
-
-           }
-           else
+            }
+            else
             {
-                MessageBox.Show("Não foi possível deletar a categoria: {txtNome.Text}");
+                MessageBox.Show($"Não foi possível deletar a categoria: {txtNome.Text}");
             }
 
-           btnDeletar.Enabled = false;
-            bntLimpar_Click(sender , e);
+            btnDeletar.Enabled = false;
+            bntLimpar_Click(sender, e);
         }
+
+      
     }
 }

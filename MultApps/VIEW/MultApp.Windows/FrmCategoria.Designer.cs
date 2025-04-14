@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.bntLimpar = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
@@ -44,7 +45,6 @@
             this.txtCriacao = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnDeletar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -91,6 +91,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(769, 250);
             this.panel2.TabIndex = 1;
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.Enabled = false;
+            this.btnDeletar.Location = new System.Drawing.Point(356, 122);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
+            this.btnDeletar.TabIndex = 12;
+            this.btnDeletar.Text = "DELETAR";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // bntLimpar
             // 
@@ -219,17 +230,6 @@
             this.label1.Size = new System.Drawing.Size(225, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "CATEGORIA DE PRODUTOS";
-            // 
-            // btnDeletar
-            // 
-            this.btnDeletar.Enabled = false;
-            this.btnDeletar.Location = new System.Drawing.Point(356, 122);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletar.TabIndex = 12;
-            this.btnDeletar.Text = "DELETAR";
-            this.btnDeletar.UseVisualStyleBackColor = true;
-            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // FrmCategoria
             // 

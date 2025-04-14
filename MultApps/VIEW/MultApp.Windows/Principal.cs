@@ -47,5 +47,13 @@ namespace MultApp.Windows
             var form = new LojaAcai();
             form.ShowDialog();
         }
+
+     
+
+        private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new FrmCategoria();
+            form.ShowDialog();
+        }
     }
 }

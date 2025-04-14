@@ -72,6 +72,13 @@
     <Compile Include="FrmCalculoAposentadoria.Designer.cs">
       <DependentUpon>FrmCalculoAposentadoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCategoria.Designer.cs">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneroEnum.cs" />
     <Compile Include="Imagens.cs" />
     <Compile Include="ImcImagem.cs" />
     <Compile Include="LojaAcai.cs">
@@ -102,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCalculoAposentadoria.resx">
       <DependentUpon>FrmCalculoAposentadoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LojaAcai.resx">
       <DependentUpon>LojaAcai.cs</DependentUpon>
@@ -215,6 +225,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Banana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CONTROLLER\MultApps.Controler\MultApps.Controler.csproj">
+      <Project>{63704ec5-a2a6-4fa5-9fe1-d5cecf9e8874}</Project>
+      <Name>MultApps.Controler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MODEL\MultApps.Models\MultApps.Models.csproj">
+      <Project>{E2DE63B8-5B0D-4E07-AE4F-6F10F88FBA3A}</Project>
+      <Name>MultApps.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

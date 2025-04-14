@@ -110,7 +110,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.btnGerar = new System.Windows.Forms.Button();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.listBoxCoberturas = new System.Windows.Forms.ListBox();
@@ -120,10 +124,6 @@
             this.listBoxTamanho = new System.Windows.Forms.ListBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnGerar = new System.Windows.Forms.Button();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -174,9 +174,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -258,7 +258,7 @@
             this.pictureBox14.Image = global::MultApp.Windows.Properties.Resources.Banana;
             this.pictureBox14.Location = new System.Drawing.Point(57, 3);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(40, 107);
+            this.pictureBox14.Size = new System.Drawing.Size(37, 107);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
@@ -1103,6 +1103,15 @@
             this.panel2.Size = new System.Drawing.Size(268, 907);
             this.panel2.TabIndex = 1;
             // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.SystemColors.Window;
+            this.panel25.Controls.Add(this.lblTotal);
+            this.panel25.Location = new System.Drawing.Point(5, 538);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(260, 42);
+            this.panel25.TabIndex = 17;
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -1112,6 +1121,36 @@
             this.lblTotal.Size = new System.Drawing.Size(18, 23);
             this.lblTotal.TabIndex = 13;
             this.lblTotal.Text = "-";
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.Plum;
+            this.panel24.Controls.Add(this.lblSenha);
+            this.panel24.Location = new System.Drawing.Point(80, 841);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(118, 36);
+            this.panel24.TabIndex = 16;
+            // 
+            // lblSenha
+            // 
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(3, 7);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(13, 18);
+            this.lblSenha.TabIndex = 15;
+            this.lblSenha.Text = "-";
+            // 
+            // btnGerar
+            // 
+            this.btnGerar.BackColor = System.Drawing.Color.Violet;
+            this.btnGerar.Location = new System.Drawing.Point(80, 793);
+            this.btnGerar.Name = "btnGerar";
+            this.btnGerar.Size = new System.Drawing.Size(118, 42);
+            this.btnGerar.TabIndex = 14;
+            this.btnGerar.Text = "Gerar Senha";
+            this.btnGerar.UseVisualStyleBackColor = false;
+            this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
             // 
             // lblMensagem
             // 
@@ -1203,45 +1242,6 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Seu Pedido";
             // 
-            // btnGerar
-            // 
-            this.btnGerar.BackColor = System.Drawing.Color.Violet;
-            this.btnGerar.Location = new System.Drawing.Point(80, 793);
-            this.btnGerar.Name = "btnGerar";
-            this.btnGerar.Size = new System.Drawing.Size(118, 42);
-            this.btnGerar.TabIndex = 14;
-            this.btnGerar.Text = "Gerar Senha";
-            this.btnGerar.UseVisualStyleBackColor = false;
-            this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
-            // 
-            // lblSenha
-            // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(3, 7);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(13, 18);
-            this.lblSenha.TabIndex = 15;
-            this.lblSenha.Text = "-";
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.Plum;
-            this.panel24.Controls.Add(this.lblSenha);
-            this.panel24.Location = new System.Drawing.Point(80, 841);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(118, 36);
-            this.panel24.TabIndex = 16;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.SystemColors.Window;
-            this.panel25.Controls.Add(this.lblTotal);
-            this.panel25.Location = new System.Drawing.Point(5, 538);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(260, 42);
-            this.panel25.TabIndex = 17;
-            // 
             // LojaAcai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1252,7 +1252,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LojaAcai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LojaAcai";
+            this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1324,12 +1324,12 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }

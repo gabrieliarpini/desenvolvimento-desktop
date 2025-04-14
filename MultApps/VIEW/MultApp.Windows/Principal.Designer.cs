@@ -36,6 +36,8 @@
             this.sistemaDeIdentificaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidoAçaíToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fazerPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipral.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,8 @@
             this.menuStripPrincipral.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadorasToolStripMenuItem1,
             this.carteirinhaToolStripMenuItem,
-            this.pedidoAçaíToolStripMenuItem});
+            this.pedidoAçaíToolStripMenuItem,
+            this.categoriaDeProdutosToolStripMenuItem});
             this.menuStripPrincipral.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipral.Name = "menuStripPrincipral";
             this.menuStripPrincipral.Size = new System.Drawing.Size(800, 25);
@@ -105,9 +108,25 @@
             // fazerPedidoToolStripMenuItem
             // 
             this.fazerPedidoToolStripMenuItem.Name = "fazerPedidoToolStripMenuItem";
-            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fazerPedidoToolStripMenuItem.Text = "Fazer Pedido";
             this.fazerPedidoToolStripMenuItem.Click += new System.EventHandler(this.fazerPedidoToolStripMenuItem_Click);
+            // 
+            // categoriaDeProdutosToolStripMenuItem
+            // 
+            this.categoriaDeProdutosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.categoriaToolStripMenuItem});
+            this.categoriaDeProdutosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.categoriaDeProdutosToolStripMenuItem.Name = "categoriaDeProdutosToolStripMenuItem";
+            this.categoriaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(151, 21);
+            this.categoriaDeProdutosToolStripMenuItem.Text = "Categoria de Produtos";
+            // 
+            // categoriaToolStripMenuItem
+            // 
+            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoriaToolStripMenuItem.Text = "Categoria";
+            this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -139,5 +158,7 @@
         private System.Windows.Forms.ToolStripMenuItem sistemaDeIdentificaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidoAçaíToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fazerPedidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem categoriaDeProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
     }
 }

@@ -243,6 +243,16 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap keys_7263325 {
+            get {
+                object obj = ResourceManager.GetObject("keys_7263325", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kiwi {
             get {
                 object obj = ResourceManager.GetObject("kiwi", resourceCulture);
@@ -316,6 +326,16 @@ namespace MultApp.Windows.Properties {
         internal static System.Drawing.Bitmap ovomaltine {
             get {
                 object obj = ResourceManager.GetObject("ovomaltine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap padlock_3257787 {
+            get {
+                object obj = ResourceManager.GetObject("padlock_3257787", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -140,9 +140,7 @@ namespace MultApp.Windows
                         case StatusEnum.Ativo:
                             e.CellStyle.ForeColor = Color.Blue;
                             break;
-                        case StatusEnum.Excluido:
-                            e.CellStyle.ForeColor = Color.Red;
-                            break;
+                       
                     }
                 }
             }
@@ -209,6 +207,6 @@ namespace MultApp.Windows
             bntLimpar_Click(sender, e);
         }
 
-      
+       
     }
 }

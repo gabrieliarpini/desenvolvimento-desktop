@@ -121,11 +121,17 @@
   <data name="divis]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\divis].jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="person_13924070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person_13924070.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="granola" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\granola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="international_18695381 (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\international_18695381 (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keys_7263325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keys_7263325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Banana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +139,11 @@
   <data name="choco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\choco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="uva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\uva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2025-04-24 200109-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-04-24 200109-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2025-04-24 195854" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-04-24 195854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="13486474_36.03 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\13486474_36.03 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,6 +153,9 @@
   </data>
   <data name="international_18695381 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\international_18695381 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\uva.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo clínica médica minimalista roxo e amarelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo clínica médica minimalista roxo e amarelo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +193,20 @@
   <data name="Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="phone-static" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone-static.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="coberturamorango" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coberturamorango.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1423466_OZIB850" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1423466_OZIB850.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2025-04-24 200109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-04-24 200109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kiwi-13kg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kiwi-13kg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Kiwi-13kg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Kiwi-13kg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,13 +214,16 @@
   <data name="leitecondensado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leitecondensado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kiwi-13kg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kiwi-13kg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laptop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cobertura Concentrado de Sorvete e Sobremesas Selecta 300gm - Morango1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="keys_7263325" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\keys_7263325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lock_8169402" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock_8169402.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

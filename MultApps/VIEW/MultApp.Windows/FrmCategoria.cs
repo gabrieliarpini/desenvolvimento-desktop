@@ -140,7 +140,7 @@ namespace MultApp.Windows
                         case StatusEnum.Ativo:
                             e.CellStyle.ForeColor = Color.Blue;
                             break;
-                       
+                        
                     }
                 }
             }

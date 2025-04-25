@@ -159,12 +159,12 @@ namespace MultApp.Windows
                     break;
 
                 case 1:
-                    var usuariosAtivos = usuarioRepositorio.ListarUsuariosPorStatus("ativo");
+                    var usuariosAtivos = usuarioRepositorio.ListarUsuariosPorStatus(1);
                     dataGridView1.DataSource = usuariosAtivos;
                     break;
 
                 case 2:
-                    var usuariosInativos = usuarioRepositorio.ListarUsuariosPorStatus("inativo");
+                    var usuariosInativos = usuarioRepositorio.ListarUsuariosPorStatus(0);
                     dataGridView1.DataSource = usuariosInativos;
                     break;
             }
@@ -177,26 +177,33 @@ namespace MultApp.Windows
                 MessageBox.Show($"Houve um erro ao clicar duas vezes sobre o Grid");
                 return;
             }
+
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
 
             var usuarioId = (int)row.Cells[0].Value;
+
+           
             var usuarioRepository = new UsuarioRepository();
-            var usuario  = usuarioRepository.ObterUsuarioPorId(usuarioId);
+            var usuario = usuarioRepository.ObterUsuarioPorId(usuarioId);
 
             if (usuario == null)
             {
-                MessageBox.Show($"Usuario : #{usuarioId} não encontrada");
+                MessageBox.Show($"Usuario: #{usuarioId} não encontrada");
                 return;
             }
-
-            txtId.Text = usuario.Id.ToString();
+           
             txtNome.Text = usuario.Nome;
+            txtCpf.Text = usuario.Cpf;
+            txtEmail.Text = usuario.Email;
+            txtSenha.Text = usuario.Senha;
+            txtDataCadastro.Text = usuario.DataCriacao.ToString("dd/MM/yyyy HH:mm");
+            txtUltimoAcesso.Text = usuario.DataUltimoAcesso.ToString("dd/MM/yyyy HH:mm");
             cmbStatus.SelectedIndex = (int)usuario.Status;
-            txtUltimoAcesso.Text = usuario.DataAlteracao.ToString("dd/MM/yyyy HH:mm");
-            txtDataCadastro.Text = usuario .DataCriacao.ToString("dd/MM/yyyy HH:mm");
-            
-            btnDeletar.Enabled = true;
+
             btnSalvar.Text = "Salvar alterações";
+
         }
+
+       
     }
 }

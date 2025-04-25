@@ -85,6 +85,12 @@
     <Compile Include="FrmCategoria.Designer.cs">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GeneroEnum.cs" />
     <Compile Include="Imagens.cs" />
     <Compile Include="ImcImagem.cs" />
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LojaAcai.resx">
       <DependentUpon>LojaAcai.cs</DependentUpon>
@@ -251,6 +260,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\keys_7263325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 195854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 200109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-static.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 200109-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_13924070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_8169402.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

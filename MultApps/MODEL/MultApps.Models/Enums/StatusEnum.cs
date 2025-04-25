@@ -4,6 +4,6 @@
     {
         Inativo = 0,   
         Ativo = 1,   
-        Excluido = 2
+        
     }
 }

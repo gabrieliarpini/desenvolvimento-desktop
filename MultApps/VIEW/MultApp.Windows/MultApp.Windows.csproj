@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,6 +61,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroUsuario.Designer.cs">
+      <DependentUpon>FrmCadastroUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCalculadoraIMC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +84,12 @@
     </Compile>
     <Compile Include="FrmCategoria.Designer.cs">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneroEnum.cs" />
     <Compile Include="Imagens.cs" />
@@ -104,6 +117,9 @@
     <EmbeddedResource Include="CarteirinhaParque.resx">
       <DependentUpon>CarteirinhaParque.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroUsuario.resx">
+      <DependentUpon>FrmCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCalculadoraIMC.resx">
       <DependentUpon>frmCalculadoraIMC.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LojaAcai.resx">
       <DependentUpon>LojaAcai.cs</DependentUpon>
@@ -235,6 +254,33 @@
       <Project>{E2DE63B8-5B0D-4E07-AE4F-6F10F88FBA3A}</Project>
       <Name>MultApps.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_3257787.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keys_7263325.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 195854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 200109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-static.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-04-24 200109-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person_13924070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_8169402.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

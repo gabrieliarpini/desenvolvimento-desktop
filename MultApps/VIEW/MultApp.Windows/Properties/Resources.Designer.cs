@@ -113,6 +113,36 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_04_24_195854 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-04-24 195854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_04_24_200109 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-04-24 200109", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_04_24_200109_Photoroom {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-04-24 200109-Photoroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap choco {
             get {
                 object obj = ResourceManager.GetObject("choco", resourceCulture);
@@ -243,6 +273,16 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap keys_7263325 {
+            get {
+                object obj = ResourceManager.GetObject("keys_7263325", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kiwi {
             get {
                 object obj = ResourceManager.GetObject("kiwi", resourceCulture);
@@ -273,6 +313,16 @@ namespace MultApp.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laptop {
+            get {
+                object obj = ResourceManager.GetObject("laptop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap leitecondensado {
             get {
                 object obj = ResourceManager.GetObject("leitecondensado", resourceCulture);
@@ -286,6 +336,16 @@ namespace MultApp.Windows.Properties {
         internal static System.Drawing.Bitmap leiteempo {
             get {
                 object obj = ResourceManager.GetObject("leiteempo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_8169402 {
+            get {
+                object obj = ResourceManager.GetObject("lock_8169402", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +376,36 @@ namespace MultApp.Windows.Properties {
         internal static System.Drawing.Bitmap ovomaltine {
             get {
                 object obj = ResourceManager.GetObject("ovomaltine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap padlock_3257787 {
+            get {
+                object obj = ResourceManager.GetObject("padlock_3257787", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap person_13924070 {
+            get {
+                object obj = ResourceManager.GetObject("person_13924070", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_static {
+            get {
+                object obj = ResourceManager.GetObject("phone-static", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

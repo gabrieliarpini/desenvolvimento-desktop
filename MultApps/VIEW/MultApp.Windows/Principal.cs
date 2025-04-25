@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MultApps.Models.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace MultApp.Windows
 {
     public partial class Principal : Form
     {
+        public Usuario UsuarioLogado { get; set; }
+
         public Principal()
         {
             InitializeComponent();
+        }
+
+        public Principal (Usuario usuario)
+        {
+            InitializeComponent();
+            UsuarioLogado = usuario;
         }
 
         private void cAlculadorasDeIMCToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,12 +57,24 @@ namespace MultApp.Windows
             form.ShowDialog();
         }
 
-     
-
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new FrmCategoria();
             form.ShowDialog();
         }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new FrmCadastroUsuario();
+            form.ShowDialog();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            statusLabelUsuario.Text = UsuarioLogado.Nome;
+        }
+
+      
     }
+    
 }

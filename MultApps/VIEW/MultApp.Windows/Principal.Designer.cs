@@ -43,6 +43,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabelUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cadastroDeProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripPrincipral.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +56,8 @@
             this.carteirinhaToolStripMenuItem,
             this.pedidoAçaíToolStripMenuItem,
             this.categoriaDeProdutosToolStripMenuItem,
-            this.cadastroUSuarioToolStripMenuItem});
+            this.cadastroUSuarioToolStripMenuItem,
+            this.cadastroDeProdutoToolStripMenuItem});
             this.menuStripPrincipral.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipral.Name = "menuStripPrincipral";
             this.menuStripPrincipral.Size = new System.Drawing.Size(800, 25);
@@ -117,7 +120,7 @@
             // fazerPedidoToolStripMenuItem
             // 
             this.fazerPedidoToolStripMenuItem.Name = "fazerPedidoToolStripMenuItem";
-            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fazerPedidoToolStripMenuItem.Text = "Fazer Pedido";
             this.fazerPedidoToolStripMenuItem.Click += new System.EventHandler(this.fazerPedidoToolStripMenuItem_Click);
             // 
@@ -128,8 +131,8 @@
             this.categoriaToolStripMenuItem});
             this.categoriaDeProdutosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.categoriaDeProdutosToolStripMenuItem.Name = "categoriaDeProdutosToolStripMenuItem";
-            this.categoriaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(167, 21);
-            this.categoriaDeProdutosToolStripMenuItem.Text = "| Categoria de Produtos |";
+            this.categoriaDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(172, 21);
+            this.categoriaDeProdutosToolStripMenuItem.Text = "| Categoria de Categoria |";
             // 
             // categoriaToolStripMenuItem
             // 
@@ -181,6 +184,23 @@
             this.panel1.Size = new System.Drawing.Size(800, 394);
             this.panel1.TabIndex = 5;
             // 
+            // cadastroDeProdutoToolStripMenuItem
+            // 
+            this.cadastroDeProdutoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cadastroDeProdutoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroToolStripMenuItem1});
+            this.cadastroDeProdutoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.cadastroDeProdutoToolStripMenuItem.Name = "cadastroDeProdutoToolStripMenuItem";
+            this.cadastroDeProdutoToolStripMenuItem.Size = new System.Drawing.Size(140, 21);
+            this.cadastroDeProdutoToolStripMenuItem.Text = "Cadastro de Produto";
+            // 
+            // cadastroToolStripMenuItem1
+            // 
+            this.cadastroToolStripMenuItem1.Name = "cadastroToolStripMenuItem1";
+            this.cadastroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.cadastroToolStripMenuItem1.Text = "Cadastro";
+            this.cadastroToolStripMenuItem1.Click += new System.EventHandler(this.cadastroToolStripMenuItem1_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,5 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroUSuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeProdutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem1;
     }
 }

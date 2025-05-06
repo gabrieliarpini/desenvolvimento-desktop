@@ -73,7 +73,7 @@ namespace MultApp.Windows
         private void CarregarTodasCategorias()
         {
             var categoriaRepository = new CategoriaRepository();
-            var listaDeCategorias = categoriaRepository.ListarTodasCategorias();
+            var listaDeCategorias = categoriaRepository.ObterTodasCategoria();
 
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Columns.Clear();

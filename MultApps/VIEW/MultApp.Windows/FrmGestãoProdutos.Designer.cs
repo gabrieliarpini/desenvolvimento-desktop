@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rbInativo = new System.Windows.Forms.RadioButton();
             this.rbAtivo = new System.Windows.Forms.RadioButton();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -53,11 +54,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.brnAtualizarGrid = new System.Windows.Forms.Button();
             this.btnNovoProduto = new System.Windows.Forms.Button();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.cmbCategoriaEscolhaFiltro = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.rbInativo = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -89,7 +89,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.brnAtualizarGrid);
             this.panel1.Controls.Add(this.btnNovoProduto);
-            this.panel1.Controls.Add(this.cmbCategoria);
+            this.panel1.Controls.Add(this.cmbCategoriaEscolhaFiltro);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cmbStatus);
             this.panel1.Controls.Add(this.lblStatus);
@@ -106,6 +106,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(911, 214);
             this.dataGridView1.TabIndex = 20;
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // panel2
             // 
@@ -134,6 +135,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(912, 321);
             this.panel2.TabIndex = 19;
+            // 
+            // rbInativo
+            // 
+            this.rbInativo.AutoSize = true;
+            this.rbInativo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbInativo.Location = new System.Drawing.Point(553, 241);
+            this.rbInativo.Name = "rbInativo";
+            this.rbInativo.Size = new System.Drawing.Size(64, 20);
+            this.rbInativo.TabIndex = 37;
+            this.rbInativo.TabStop = true;
+            this.rbInativo.Text = "Inativo";
+            this.rbInativo.UseVisualStyleBackColor = true;
+            this.rbInativo.CheckedChanged += new System.EventHandler(this.rbInativo_CheckedChanged);
             // 
             // rbAtivo
             // 
@@ -337,13 +351,13 @@
             this.btnNovoProduto.Text = "+ Novo Produto";
             this.btnNovoProduto.UseVisualStyleBackColor = false;
             // 
-            // cmbCategoria
+            // cmbCategoriaEscolhaFiltro
             // 
-            this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(238, 60);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(195, 21);
-            this.cmbCategoria.TabIndex = 15;
+            this.cmbCategoriaEscolhaFiltro.FormattingEnabled = true;
+            this.cmbCategoriaEscolhaFiltro.Location = new System.Drawing.Point(238, 60);
+            this.cmbCategoriaEscolhaFiltro.Name = "cmbCategoriaEscolhaFiltro";
+            this.cmbCategoriaEscolhaFiltro.Size = new System.Drawing.Size(195, 21);
+            this.cmbCategoriaEscolhaFiltro.TabIndex = 15;
             // 
             // label2
             // 
@@ -377,19 +391,6 @@
             this.lblStatus.TabIndex = 14;
             this.lblStatus.Text = "Status";
             // 
-            // rbInativo
-            // 
-            this.rbInativo.AutoSize = true;
-            this.rbInativo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbInativo.Location = new System.Drawing.Point(553, 241);
-            this.rbInativo.Name = "rbInativo";
-            this.rbInativo.Size = new System.Drawing.Size(64, 20);
-            this.rbInativo.TabIndex = 37;
-            this.rbInativo.TabStop = true;
-            this.rbInativo.Text = "Inativo";
-            this.rbInativo.UseVisualStyleBackColor = true;
-            this.rbInativo.CheckedChanged += new System.EventHandler(this.rbInativo_CheckedChanged);
-            // 
             // FrmGestãoProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,6 +400,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmGestãoProdutos";
             this.Text = "FrmGestãoProdutos";
+            this.Load += new System.EventHandler(this.FrmGestãoProdutos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -416,7 +418,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbCategoriaEscolhaFiltro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnNovoProduto;
         private System.Windows.Forms.Button brnAtualizarGrid;

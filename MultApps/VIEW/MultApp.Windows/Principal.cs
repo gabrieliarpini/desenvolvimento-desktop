@@ -74,7 +74,11 @@ namespace MultApp.Windows
             statusLabelUsuario.Text = UsuarioLogado.Nome;
         }
 
-      
+        private void cadastroToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var form = new FrmGestãoProdutos();
+            form.ShowDialog();
+        }
     }
     
 }

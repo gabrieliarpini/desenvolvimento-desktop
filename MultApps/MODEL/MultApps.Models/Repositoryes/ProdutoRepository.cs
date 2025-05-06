@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MultApps.Models.Repositoryes
 {
-    internal class ProdutoRepository
+    public class ProdutoRepository
     {
         public string ConnectionString = "Server=localhost;Database=multapps_dev; Uid=root;Pwd=root";
 
@@ -18,14 +18,15 @@ namespace MultApps.Models.Repositoryes
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))
             {
-                var comandoSql = @"INSERT INTO produto (nome, preco, descricao,estoque)
-                                   VALUES(@Nome,@Preco, @Descricao, @Estoque)";
+                var comandoSql = @"INSERT INTO produto (nome, preco, descricao,estoque, status)
+                                   VALUES(@Nome,@Preco, @Descricao, @Estoque, @Status)";
 
                 var parametros = new DynamicParameters();
                 parametros.Add("@Nome", produto.Nome);
                 parametros.Add("@Preco", produto.Preco);
                 parametros.Add("@Descricao", produto.Descricao);
                 parametros.Add("@Estoque", produto.Estoque);
+                parametros.Add("@Status", produto.Status);
 
                 var resultado = db.Execute(comandoSql, parametros);
                 return resultado > 0;
@@ -46,11 +47,12 @@ namespace MultApps.Models.Repositoryes
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))
             {
-                var comandoSql = @"SELECT id AS Id, 
-                                          nome AS Nome, 
-                                          preco AS Preco, 
-                                          descricao AS Descricao, 
+                var comandoSql = @"SELECT id AS Id,
+                                          nome AS Nome,
+                                          preco AS Preco,
+                                          descricao AS Descricao,
                                           estoque AS Estoque,
+                                          status AS Status,
                                           data_criacao AS DataCadastro,
                                           data_alteracao AS DataAlteracao
                                    FROM produto";
@@ -61,7 +63,8 @@ namespace MultApps.Models.Repositoryes
                 dataTable.Columns.Add("Nome", typeof(string));
                 dataTable.Columns.Add("Preco", typeof(string));
                 dataTable.Columns.Add("Descricao", typeof(string));
-                dataTable.Columns.Add("Estoque", typeof(DateTime));
+                dataTable.Columns.Add("Estoque", typeof(string));
+                dataTable.Columns.Add("Status", typeof(string));
                 dataTable.Columns.Add("Data Cadastro", typeof(DateTime));
                 dataTable.Columns.Add("Data Alteracao", typeof(DateTime));
                 foreach (var produto in produtos)
@@ -71,6 +74,7 @@ namespace MultApps.Models.Repositoryes
                         produto.Preco,
                         produto.Descricao,
                         produto.Estoque,
+                        produto.Status,
                         produto.dataCriacao,
                         produto.dataAlteracao);
                 }
@@ -81,13 +85,14 @@ namespace MultApps.Models.Repositoryes
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))
             {
-                var comandoSql = @"SELECT id AS Id, 
-                                          nome AS Nome, 
-                                          preco AS Preco, 
-                                          descricao AS Descricao, 
+                var comandoSql = @"SELECT id AS Id,
+                                          nome AS Nome,
+                                          preco AS Preco,
+                                          descricao AS Descricao,
                                           estoque AS Estoque,
+                                          status AS Status,
                                           data_criacao AS DataCadastro,
-                                          data_alteracao AS DataAlteracao 
+                                          data_alteracao AS DataAlteracao
                                    FROM produto
                                    WHERE status = @Status";
 
@@ -101,7 +106,8 @@ namespace MultApps.Models.Repositoryes
                 dataTable.Columns.Add("Nome", typeof(string));
                 dataTable.Columns.Add("Preco", typeof(string));
                 dataTable.Columns.Add("Descricao", typeof(string));
-                dataTable.Columns.Add("Estoque", typeof(DateTime));
+                dataTable.Columns.Add("Estoque", typeof(string));
+                dataTable.Columns.Add("Status", typeof(string));
                 dataTable.Columns.Add("Data Cadastro", typeof(DateTime));
                 dataTable.Columns.Add("Data Alteracao", typeof(DateTime));
                 foreach (var produto in produtos)
@@ -111,6 +117,7 @@ namespace MultApps.Models.Repositoryes
                         produto.Preco,
                         produto.Descricao,
                         produto.Estoque,
+                        produto.Status,
                         produto.dataCriacao,
                         produto.dataAlteracao);
                 }
@@ -121,13 +128,14 @@ namespace MultApps.Models.Repositoryes
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))
             {
-                var comandoSql = @"SELECT id AS Id, 
-                                          nome AS Nome, 
-                                          preco AS Preco, 
-                                          descricao AS Descricao, 
+                var comandoSql = @"SELECT id AS Id,
+                                          nome AS Nome,
+                                          preco AS Preco,
+                                          descricao AS Descricao,
                                           estoque AS Estoque,
+                                          status AS Status,
                                           data_criacao AS DataCadastro,
-                                          data_alteracao AS DataAlteracao 
+                                          data_alteracao AS DataAlteracao
                                    FROM produto
                                    WHERE id = @Id";
                 var parametros = new DynamicParameters();
@@ -141,14 +149,15 @@ namespace MultApps.Models.Repositoryes
         {
             using (IDbConnection db = new MySqlConnection(ConnectionString))
             {
-                var comandoSql = @"SELECT id AS Id, 
-                                          nome AS Nome, 
-                                          preco AS Preco, 
-                                          descricao AS Descricao, 
+                var comandoSql = @"SELECT id AS Id,
+                                          nome AS Nome,
+                                          preco AS Preco,
+                                          descricao AS Descricao,
                                           estoque AS Estoque,
+                                          status AS Status,
                                           data_criacao AS DataCadastro,
-                                          data_alteracao AS DataAlteracao 
-                                   FROM produto 
+                                          data_alteracao AS DataAlteracao
+                                   FROM produto
                                    WHERE nome = @Nome";
                 var parametros = new DynamicParameters();
                 parametros.Add("@Nome", nome);
@@ -158,6 +167,22 @@ namespace MultApps.Models.Repositoryes
             }
 
         }
-        
+        public List<Produto> ListarTodosProdutos()
+        {
+            using (IDbConnection db = new MySqlConnection(ConnectionString))
+            {
+                var comandoSql = @"SELECT id, 
+                                 nome AS Nome, 
+                                 preco AS Preco, 
+                                 estoque AS QuantidadeEmEstoque,
+                                 data_criacao AS DataCadastro,
+                                 data_alteracao AS DataAlteracao,
+                                 status 
+                                 FROM produto;";
+                var resultado = db.Query<Produto>(comandoSql).ToList();
+                return resultado;
+            }
+        }
     }
 }
+
